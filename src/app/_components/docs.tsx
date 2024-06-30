@@ -5,26 +5,34 @@ const documentos = [
   {
     titulo: "Esquema de proyecto de tesis - referencial",
     descripcion:
-      "Descarga nuestra plantilla de plan de tesis para guiarte en la elaboración de tu proyecto.",
+      "Accede a una guía estructurada para planificar y desarrollar tu proyecto de tesis. Este documento incluye todos los lineamientos necesarios para organizar tu investigación de manera efectiva.",
     link: "/docs/EsquemaProyectoTesisReferencial.DOCX",
   },
   {
     titulo: "Manual de tesis del alumno",
     descripcion:
-      "Consulta nuestra guía completa sobre los pasos para elaborar una tesis exitosa.",
+      "Obtén una guía completa y detallada para realizar tu tesis. Este manual incluye todos los pasos y requisitos necesarios para facilitar tu proceso.",
     link: "/docs/ManualTesisAlumno.pdf",
   },
 
   {
     titulo: "Nuevo reglamento de grados y títulos de la FAICA",
-    descripcion: "Consulta el nuevo reg",
+    descripcion:
+      "Mantente informado sobre las últimas regulaciones para obtener tus grados y títulos. Este PDF incluye toda la información actualizada que necesitas.",
     link: "/docs/NuevoReglamentoGradosTitulos.pdf",
   },
   {
     titulo:
       "Proceso administrativo para la colación profesional después de la sustentación",
-    descripcion: "Consulta el proceso administrativo",
+    descripcion:
+      "Conoce todos los pasos y requisitos necesarios para completar tu colación profesional después de la sustentación. Este PDF te proporciona una guía clara y detallada.",
     link: "/docs/ProcesoAdministrativoParaColacionProfesionalDespues.pdf",
+  },
+  {
+    titulo: "Requisitos para obtener el título profesional - EPIC",
+    descripcion:
+      "Descubre todos los requisitos necesarios para obtener tu título profesional en un solo documento. Este PDF incluye información detallada sobre los cursos, créditos, documentos y procedimientos necesarios.",
+    link: "/docs/RequisitosTituloProfesionalEpic.pdf",
   },
 ];
 

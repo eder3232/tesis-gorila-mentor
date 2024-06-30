@@ -11,7 +11,7 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "Tesis Gorilla Mentor",
   description: "Hacemos fácil tu tesis",
-  icons: [{ url: "" }],
+  icons: [{ url: "/images/brand/icon.ico", href: "/images/brand/icon.ico" }],
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "relative min-h-screen bg-background font-sans antialiased",
           fontSans.variable,
         )}
       >

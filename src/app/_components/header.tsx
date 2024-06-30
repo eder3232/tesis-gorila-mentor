@@ -13,7 +13,7 @@ const Header = () => {
         >
           <Image
             className="h-14 w-auto"
-            src="/images/brand/logo.jpg"
+            src="/images/brand/logo2.png"
             width={448}
             height={256}
             alt="University Logo"
@@ -21,7 +21,7 @@ const Header = () => {
         </Link>
         <nav className="hidden gap-4 sm:gap-6 lg:flex">
           <Link
-            href="#"
+            href="#hero"
             className="text-sm font-medium text-primary-foreground underline-offset-4 hover:underline"
             prefetch={false}
           >
