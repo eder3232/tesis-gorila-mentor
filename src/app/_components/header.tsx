@@ -1,6 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { Roboto } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const roboto = Roboto({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+});
 
 const Header = () => {
   return (
@@ -18,6 +25,15 @@ const Header = () => {
             height={256}
             alt="University Logo"
           />
+
+          <span
+            className={cn(
+              "text-xl font-bold text-primary-foreground md:text-2xl",
+              roboto.className,
+            )}
+          >
+            Tesis Gorila Mentor
+          </span>
         </Link>
         <nav className="hidden gap-4 sm:gap-6 lg:flex">
           <Link

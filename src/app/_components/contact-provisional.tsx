@@ -58,13 +58,15 @@ const ContactProvisional = () => {
           </div>
         </div>
 
-        <div className="relative h-96 w-96">
-          <Image
-            src="/images/brand/gorilaConfundido.png"
-            layout="fill"
-            objectFit="contain"
-            alt="Gorila amigo"
-          />
+        <div className="flex justify-center">
+          <div className="relative h-96 w-96">
+            <Image
+              src="/images/brand/gorilaConfundido.png"
+              alt="gorila"
+              layout="fill"
+              style={{ objectFit: "contain" }}
+            />
+          </div>
         </div>
       </div>
     </section>

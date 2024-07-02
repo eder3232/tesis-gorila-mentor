@@ -22,15 +22,14 @@ const Importancia = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <Image
-            src="/images/brand/gorila7.png"
-            width="293"
-            height="261"
-            alt="Thesis Plan"
-            // className="h-full"
-            // layout="fill"
-            // objectFit="contain"
-          />
+          <div className="relative h-72 w-72">
+            <Image
+              src="/images/brand/gorila7.png"
+              alt="gorila"
+              layout="fill"
+              style={{ objectFit: "contain" }}
+            />
+          </div>
         </div>
       </div>
     </section>

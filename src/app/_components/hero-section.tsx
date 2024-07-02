@@ -14,8 +14,9 @@ const HeroSection = () => {
                 Crea un plan de tesis exitoso
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                Sigue estos pasos para elaborar un plan de tesis que te ayude a
-                culminar tu proyecto de grado.
+                Si eres estudiantes de ingeniería civil de la UCSM, sigue estos
+                pasos para elaborar un plan de tesis que te ayude a culminar tu
+                proyecto de grado.
               </p>
             </div>
             <div className="flex flex-col justify-center gap-2 min-[400px]:flex-row md:justify-start">

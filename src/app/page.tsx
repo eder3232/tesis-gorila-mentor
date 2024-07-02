@@ -14,7 +14,7 @@ import Importancia from "./_components/importancia";
 import Docs from "./_components/docs";
 import Footer from "./_components/footer";
 import Contact from "./_components/contact";
-import Faq from "./_components/faq";
+import Faq from "./_components/faq/faq";
 import ContactProvisional from "./_components/contact-provisional";
 
 export default function Component() {
