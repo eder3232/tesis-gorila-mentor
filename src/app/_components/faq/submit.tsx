@@ -29,7 +29,7 @@ const Submit = () => {
                 ¿Cómo presento mi plan de tesis?
               </CompFaqQuestion>
               <CompFaqAnswer>
-                {/* <span>
+                <span>
                   Para presentar tu plan de tesis debe subir tu plan en PDF al
                   siguiente enlace.
                 </span>
@@ -39,8 +39,7 @@ const Submit = () => {
                   rel="noopener noreferrer"
                 >
                   https://apps.ucsm.edu.pe/UCSMERP/tramites.php
-                </a> */}
-                asdf
+                </a>
               </CompFaqAnswer>
             </CompFaqQuestionContainer>
 
