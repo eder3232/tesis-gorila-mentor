@@ -7,7 +7,7 @@ import { SocialIcon } from "react-social-icons";
 
 const ContactProvisional = () => {
   return (
-    <section className="w-full bg-muted py-12 md:py-24 lg:py-32" id="contact">
+    <section className="w-full bg-muted py-12 lg:py-32" id="contact">
       <div className="container flex flex-col px-4 md:flex-row md:px-6">
         <div className="space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">

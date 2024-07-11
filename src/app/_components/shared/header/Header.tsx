@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { Roboto } from "next/font/google";
 import { cn } from "@/lib/utils";
+import MenuMobile from "./MenuMobile";
 
 const roboto = Roboto({
   weight: ["400", "700"],
@@ -11,8 +12,8 @@ const roboto = Roboto({
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between bg-primary">
-      <div className="container flex h-20 items-center justify-between px-4 lg:px-6">
+    <header className="flex h-16 items-center justify-between bg-primary">
+      <div className="container flex h-full items-center justify-between">
         <Link
           href="#"
           className="flex items-center justify-center"
@@ -28,13 +29,14 @@ const Header = () => {
 
           <span
             className={cn(
-              "text-xl font-bold text-primary-foreground md:text-2xl",
+              "hidden text-xl font-bold text-primary-foreground md:block md:text-2xl",
               roboto.className,
             )}
           >
             Tesis Gorila Mentor
           </span>
         </Link>
+        <MenuMobile />
         <nav className="hidden gap-4 sm:gap-6 lg:flex">
           <Link
             href="#hero"
@@ -42,6 +44,13 @@ const Header = () => {
             prefetch={false}
           >
             Inicio
+          </Link>
+          <Link
+            href="#timeline"
+            className="text-sm font-medium text-primary-foreground underline-offset-4 hover:underline"
+            prefetch={false}
+          >
+            Pasos
           </Link>
           <Link
             href="#faq"

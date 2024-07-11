@@ -3,7 +3,7 @@ import React from "react";
 
 const Importancia = () => {
   return (
-    <section className="w-full bg-muted py-12 md:py-24 lg:py-32">
+    <section className="w-full bg-muted">
       <div className="container flex flex-col justify-between gap-4 px-4 md:flex-row md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">

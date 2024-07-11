@@ -9,6 +9,9 @@ import {
   CompFaqQuestionsList,
   CompFaqTittle,
 } from "./_components/comp-faq";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import ButtonUcsmERP from "./_components/ButtonUcsmERP";
 
 const Submit = () => {
   return (
@@ -33,13 +36,16 @@ const Submit = () => {
                   Para presentar tu plan de tesis debe subir tu plan en PDF al
                   siguiente enlace.
                 </span>
-                <a
+                {/* <a
                   href="https://apps.ucsm.edu.pe/UCSMERP/tramites.php"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="inline break-words"
                 >
                   https://apps.ucsm.edu.pe/UCSMERP/tramites.php
-                </a>
+                </a> */}
+
+                <ButtonUcsmERP />
               </CompFaqAnswer>
             </CompFaqQuestionContainer>
 

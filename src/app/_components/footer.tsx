@@ -3,8 +3,8 @@ import { SocialIcon } from "react-social-icons";
 
 const Footer = () => {
   return (
-    <footer className="border-t bg-muted">
-      <div className="container flex w-full shrink-0 flex-col items-center gap-2 px-4 py-6 sm:flex-row md:px-6">
+    <footer className="absolute bottom-0 h-64 w-full border-t bg-muted">
+      <div className="container flex h-full w-full shrink-0 flex-col items-center gap-6 px-4 py-6 sm:flex-row md:items-end md:px-6">
         <div className="flex flex-col gap-2 sm:flex-row sm:gap-4">
           <Link
             href="#hero"

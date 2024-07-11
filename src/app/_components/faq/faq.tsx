@@ -7,7 +7,7 @@ import Submit from "./submit";
 
 const Faq = () => {
   return (
-    <section className="container py-12 md:py-24 lg:py-32" id="faq">
+    <section className="w-full" id="faq">
       {/* <div className="flex justify-center">
           <div className="relative h-96 w-96">
             <Image
@@ -21,7 +21,7 @@ const Faq = () => {
 
       <div className="space-y-4">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-          ¿Cuál es el proceso de elaborar una tesis?
+          Preguntas más frecuentes al hacer la tesis
         </h2>
         <div className="flex flex-col">
           <Previous />

@@ -38,7 +38,7 @@ const documentos = [
 
 const Docs = () => {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32" id="documents">
+    <section className="w-full py-12" id="documents">
       <div className="container px-4 md:px-6">
         <div className="space-y-4">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">

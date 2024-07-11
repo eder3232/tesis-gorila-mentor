@@ -8,7 +8,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Header from "./_components/header";
 import HeroSection from "./_components/hero-section";
 import Importancia from "./_components/importancia";
 import Docs from "./_components/docs";
@@ -16,20 +15,18 @@ import Footer from "./_components/footer";
 import Contact from "./_components/contact";
 import Faq from "./_components/faq/faq";
 import ContactProvisional from "./_components/contact-provisional";
+import Timeline from "./_components/timeline/timeline";
 
 export default function Component() {
   return (
-    <div className="flex min-h-[100dvh] flex-col">
-      <Header />
-      <main className="flex-1">
-        <HeroSection />
-        <Importancia />
-        <Faq />
-        <Docs />
-        {/* <Contact /> */}
-        <ContactProvisional />
-      </main>
-      <Footer />
-    </div>
+    <main className="space-y-16 bg-green-200 md:space-y-32">
+      <HeroSection />
+      <Importancia />
+      <Timeline />
+      <Faq />
+      <Docs />
+      {/* <Contact /> */}
+      <ContactProvisional />
+    </main>
   );
 }
