@@ -14,6 +14,13 @@ const Footer = () => {
             Inicio
           </Link>
           <Link
+            href="#timeline"
+            className="text-xs underline-offset-4 hover:underline"
+            prefetch={false}
+          >
+            Pasos
+          </Link>
+          <Link
             href="#faq"
             className="text-xs underline-offset-4 hover:underline"
             prefetch={false}

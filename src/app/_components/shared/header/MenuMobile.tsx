@@ -24,17 +24,21 @@ const MenuMobile = () => {
         <div className="grid gap-4 p-4">
           <Link
             href="#"
-            className="flex items-center gap-2 text-lg font-medium"
+            className="flex flex-col items-center gap-2 text-lg font-medium"
             prefetch={false}
           >
-            <Image
-              src="/images/brand/logo2.png"
-              alt="logo"
-              height={30}
-              width={30}
-              className="h-6 w-6"
-            />
-            Tesis Gorila Mentor
+            <div className="min-h-32 min-w-32">
+              <div className="relative h-32 w-32">
+                <Image
+                  src="/images/brand/logo3.png"
+                  alt="logo"
+                  layout="fill"
+                  style={{ objectFit: "contain" }}
+                />
+              </div>
+            </div>
+
+            <span>Tesis Gorila Mentor</span>
           </Link>
           <nav className="grid gap-2">
             <Link

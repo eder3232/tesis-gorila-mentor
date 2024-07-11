@@ -27,7 +27,7 @@ const HeroSection = () => {
               </Link>
             </div>
           </div>
-          <div className="relative flex h-64 w-64 w-full justify-center md:h-96 md:w-96">
+          <div className="relative flex h-64 w-64 justify-center md:h-96 md:w-96">
             <Image
               src="/images/brand/gorila3.png"
               alt="Thesis Plan"

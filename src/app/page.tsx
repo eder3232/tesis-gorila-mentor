@@ -19,7 +19,7 @@ import Timeline from "./_components/timeline/timeline";
 
 export default function Component() {
   return (
-    <main className="space-y-16 bg-green-200 md:space-y-32">
+    <main className="space-y-16 md:space-y-32">
       <HeroSection />
       <Importancia />
       <Timeline />
