@@ -31,7 +31,7 @@ export default function RootLayout({
       >
         <div className="pb-64">
           <Header />
-          <div className="container mb-64 flex justify-center pt-16">
+          <div className="container mb-16 flex justify-center pt-16">
             {children}
           </div>
         </div>

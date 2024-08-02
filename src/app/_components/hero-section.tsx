@@ -31,8 +31,8 @@ const HeroSection = () => {
             <Image
               src="/images/brand/gorila3.png"
               alt="Thesis Plan"
-              layout="fill"
               objectFit="contain"
+              fill
             />
           </div>
         </div>

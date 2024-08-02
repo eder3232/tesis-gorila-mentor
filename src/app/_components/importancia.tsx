@@ -26,7 +26,7 @@ const Importancia = () => {
             <Image
               src="/images/brand/gorila7.png"
               alt="gorila"
-              layout="fill"
+              fill
               style={{ objectFit: "contain" }}
             />
           </div>

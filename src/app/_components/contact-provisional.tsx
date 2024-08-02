@@ -63,8 +63,8 @@ const ContactProvisional = () => {
             <Image
               src="/images/brand/gorilaConfundido.png"
               alt="gorila"
-              layout="fill"
               style={{ objectFit: "contain" }}
+              fill
             />
           </div>
         </div>
