@@ -1,24 +1,20 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
 
 const Page = () => {
-  const handleDownload = async () => {
-    const response = await fetch("/api/create-thesis-plan");
-    const blob = await response.blob();
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "ThesisPlan.docx";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-  };
-
   return (
     <div>
       <h1>Descargar Plan de Tesis:</h1>
-      <Button onClick={handleDownload}>Descargar</Button>
+
+      <Link
+        className={buttonVariants({ variant: "default" })}
+        href="/api/thesis-plan"
+      >
+        Click here
+      </Link>
     </div>
   );
 };
