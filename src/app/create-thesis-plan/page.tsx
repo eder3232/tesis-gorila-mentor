@@ -3,18 +3,17 @@
 import { Button } from "@/components/ui/button";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
+import { Packer } from "docx";
+import { saveAs } from "file-saver";
+import DownloadButton from "./_components/DownloadButton";
 
 const Page = () => {
   return (
     <div>
       <h1>Descargar Plan de Tesis:</h1>
 
-      <Link
-        className={buttonVariants({ variant: "default" })}
-        href="/api/thesis-plan"
-      >
-        Click here
-      </Link>
+      <p>Esta vez tiene que funcionar</p>
+      <DownloadButton />
     </div>
   );
 };

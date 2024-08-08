@@ -76,11 +76,11 @@ export function createCover({
         new TextRun({
           text: title,
           size: `${12}pt`,
-          break: 2,
+          break: 1,
           allCaps: true,
         }),
       ],
-      alignment: AlignmentType.JUSTIFIED,
+      alignment: AlignmentType.CENTER,
     }),
 
     createAuthors(authors),
