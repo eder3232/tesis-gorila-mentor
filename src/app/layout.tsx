@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
-import Header from "./_components/shared/header/Header";
-import Footer from "./_components/footer";
+import JotaiProvider from "@/shared/providers/jotaiProvider";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -29,13 +28,7 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-        <div className="pb-64">
-          <Header />
-          <div className="container mb-16 flex justify-center pt-16">
-            {children}
-          </div>
-        </div>
-        <Footer />
+        <JotaiProvider>{children}</JotaiProvider>
       </body>
     </html>
   );

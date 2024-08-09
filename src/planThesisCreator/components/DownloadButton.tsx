@@ -1,11 +1,12 @@
-import { IPlanThesisData } from "@/docx/interfaces/planThesis";
+"use client";
 
-const data: IPlanThesisData = {
-  title: "nanotubos de carbono",
-  students: ["eddy", "sucacahua"],
-};
+import { Button } from "@/components/ui/button";
+import { IPlanThesisData } from "@/planThesisCreator/interfaces/planThesis";
+import { atomGetDataThesisPlanCreator } from "../store/dataThesisPlanCreator";
+import { useAtom } from "jotai";
 
 const DownloadButton = () => {
+  const [dataThesisPlanCreator] = useAtom(atomGetDataThesisPlanCreator);
   const handleDownload = async () => {
     try {
       // Realiza el fetch del archivo DOCX desde el endpoint
@@ -15,7 +16,7 @@ const DownloadButton = () => {
           "Content-Type":
             "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify(dataThesisPlanCreator),
       });
 
       if (!response.ok) {
@@ -40,7 +41,7 @@ const DownloadButton = () => {
       console.error("Error al descargar el archivo:", error);
     }
   };
-  return <button onClick={handleDownload}>Descargar DOCX</button>;
+  return <Button onClick={handleDownload}>Descargar en formato WORD.</Button>;
 };
 
 export default DownloadButton;

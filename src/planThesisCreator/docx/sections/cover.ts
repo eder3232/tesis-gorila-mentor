@@ -13,13 +13,12 @@ import {
 import fs from "fs";
 import { join } from "path";
 
-export function createCover({
-  title,
-  authors,
-}: {
+export interface ICover {
   title: string;
   authors: string[];
-}): Paragraph[] {
+}
+
+export function createCover({ title, authors }: ICover): Paragraph[] {
   return [
     new Paragraph({
       children: [

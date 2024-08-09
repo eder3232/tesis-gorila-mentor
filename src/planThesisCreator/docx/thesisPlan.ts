@@ -12,20 +12,25 @@ import {
 import { ucsmLogo } from "./imageUcsm";
 import fs from "fs";
 import { join } from "path";
-import { createCover } from "./sections/Cover";
-import { IPlanThesisData } from "./interfaces/planThesis";
+import { createCover } from "./sections/cover";
+import { IPlanThesisData, IThesisPlanCreator } from "../interfaces/planThesis";
+import { createProblemStatement } from "./sections/problem";
+import { IPlanteamientoProblema } from "../interfaces/planteamientoProblema";
 
 export const planThesisData: IPlanThesisData = {
   title:
     "Desarrollo de una Aplicación Web en React para el Análisis Estructural Utilizando el Método Matricial de Rigideces",
-  students: ["Sucapuca Cruz, Eddy Eder", "Alumno 2"],
+  students: ["Alumno 1", "Alumno 2"],
 };
 
 // type PlanThesisDataType = typeof planThesisData;
 
 export class ThesisPlanCreator {
   //tslint:disable-next-line: typedef
-  public create({ title, students }: IPlanThesisData): Document {
+  public create({
+    planThesisData,
+    problemStatementData,
+  }: IThesisPlanCreator): Document {
     const document = new Document({
       styles: {
         paragraphStyles: [
@@ -47,13 +52,14 @@ export class ThesisPlanCreator {
         {
           children: [
             ...createCover({
-              title: title,
-              authors: students,
+              title: planThesisData.title,
+              authors: planThesisData.students,
             }),
             new Paragraph({
               children: [],
               pageBreakBefore: true,
             }),
+            ...createProblemStatement(problemStatementData),
           ],
         },
       ],
